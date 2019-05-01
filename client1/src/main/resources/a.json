@@ -1,0 +1,51 @@
+[
+  {
+    "host": "192.168.0.112",
+    "port": 8762,
+    "metadata": {
+      "management.port": "8762"
+    },
+    "secure": false,
+    "uri": "http://192.168.0.112:8762",
+    "serviceId": "CLIENT1",
+    "instanceId": "192.168.0.112:client1:8762",
+    "instanceInfo": {
+      "instanceId": "192.168.0.112:client1:8762",
+      "app": "CLIENT1",
+      "appGroupName": null,
+      "ipAddr": "192.168.0.112",
+      "sid": "na",
+      "homePageUrl": "http://192.168.0.112:8762/",
+      "statusPageUrl": "http://192.168.0.112:8762/actuator/info",
+      "healthCheckUrl": "http://192.168.0.112:8762/actuator/health",
+      "secureHealthCheckUrl": null,
+      "vipAddress": "client1",
+      "secureVipAddress": "client1",
+      "countryId": 1,
+      "dataCenterInfo": {
+        "@class": "com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo",
+        "name": "MyOwn"
+      },
+      "hostName": "192.168.0.112",
+      "status": "UP",
+      "overriddenStatus": "UNKNOWN",
+      "leaseInfo": {
+        "renewalIntervalInSecs": 30,
+        "durationInSecs": 90,
+        "registrationTimestamp": 1556704769619,
+        "lastRenewalTimestamp": 1556704918498,
+        "evictionTimestamp": 0,
+        "serviceUpTimestamp": 1556704768821
+      },
+      "isCoordinatingDiscoveryServer": false,
+      "metadata": {
+        "management.port": "8762"
+      },
+      "lastUpdatedTimestamp": 1556704769619,
+      "lastDirtyTimestamp": 1556704768456,
+      "actionType": "ADDED",
+      "asgName": null
+    },
+    "scheme": null
+  }
+]
