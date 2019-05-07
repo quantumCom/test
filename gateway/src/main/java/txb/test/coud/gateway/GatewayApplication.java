@@ -13,8 +13,8 @@ public class GatewayApplication {
 		SpringApplication.run(GatewayApplication.class, args);
 	}
 
-	@Bean
-	public RouteLocator myRoutes(RouteLocatorBuilder builder) {
-		return builder.routes().build();
-	}
+//	@Bean
+//	public RouteLocator myRoutes(RouteLocatorBuilder builder) {
+//		return builder.routes().build();
+//	}
 }
