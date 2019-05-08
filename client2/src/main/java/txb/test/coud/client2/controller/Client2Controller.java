@@ -5,6 +5,7 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -21,7 +22,7 @@ public class Client2Controller {
     }
 
     @RequestMapping("/say-hello")
-    public String sayHello() {
-        return "i'm client2";
+    public String sayHello(@RequestParam String param) {
+        return "i'm client2 with param:"+param;
     }
 }

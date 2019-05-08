@@ -21,7 +21,7 @@ ext {
 dependencies {
 //	implementation 'io.pivotal.spring.cloud:spring-cloud-services-starter-config-client'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-cloud-starter-eureka'
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 //	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-ribbon'
 //	implementation 'org.springframework.cloud:spring-cloud-starter-zookeeper-discovery'
