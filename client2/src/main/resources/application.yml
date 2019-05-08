@@ -1,7 +1,9 @@
 spring:
   application:
     name: client2
-
+feign:
+  hystrix:
+    enabled: true
 server:
   port: 8763
 eureka:

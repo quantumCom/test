@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import txb.test.coud.client1.service.Client2Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -39,7 +40,7 @@ public class Client1Controller {
 
     @RequestMapping("/geign2client2")
     public String geign2client2() {
-        return client2Service.sayHello("333");
+        return client2Service.sayHello(LocalDateTime.now().toString());
     }
 
 }
