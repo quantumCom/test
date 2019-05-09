@@ -1,5 +1,3 @@
-server:
-  port: 9898
 spring:
   application:
     name: config-server
@@ -7,7 +5,18 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ityouknow/spring-cloud-starter/     # 配置git仓库的地址
-          search-paths: config-repo                             # git仓库地址下的相对地址，可以配置多个，用,分割。
-          username:                                             # git仓库的账号
-          password:                                             # git仓库的密码
+          uri: https://github.com/quantumCom/test
+          search-paths: config-repo   #澶氫釜鐨勮瘽鐢ㄦ嫾闊抽殧寮�
+          username:
+          password:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 9898
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+

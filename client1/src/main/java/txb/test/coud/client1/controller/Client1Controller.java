@@ -1,6 +1,7 @@
 package txb.test.coud.client1.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,6 +15,10 @@ import java.util.List;
 
 @RestController
 public class Client1Controller {
+
+    @Value("${value1}")
+    private String value1;
+
     @Autowired
     private DiscoveryClient discoveryClient;
 
@@ -31,6 +36,11 @@ public class Client1Controller {
     @RequestMapping("/say-hello")
     public String sayHello() {
         return "i'm client1";
+    }
+
+    @RequestMapping("/config/value1")
+    public String configValue1() {
+        return value1;
     }
 
     @RequestMapping("/contact-to-client2")

@@ -1,0 +1,7 @@
+spring:
+    cloud:
+      config:
+        name: client2
+        profile: pro
+        uri: http://localhost:9898/
+        label: master

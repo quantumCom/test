@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    config:
+      profile: pro
+      uri: http://localhost:9898/
+      label: master

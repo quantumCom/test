@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: eureka
+  cloud:
+    config:
+      profile: pro
+      uri: http://localhost:9898/
+      label: master
