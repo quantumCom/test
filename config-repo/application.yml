@@ -11,3 +11,13 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
+---
+spring:
+  profiles: uat
+sms:
+  sendSms: false
+---
+spring:
+  profiles: prod
+sms:
+  sendSms: true
