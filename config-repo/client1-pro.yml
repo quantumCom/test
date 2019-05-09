@@ -14,3 +14,11 @@ value1: hello-new
 management:
   security:
     enabled: false
+  server:
+    port: 8762
+  endpoints:
+    web:
+#      base-path: / #默认是/actuator 前缀，可以在这里修改
+      exposure:
+        include: "*"  #打开全部请求端点
+#        include: refresh,health,info #打开部分
