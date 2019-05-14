@@ -13,4 +13,4 @@ management:
     web:
       exposure:
         include: "*"
-value1: hello
+value1: hello5656
