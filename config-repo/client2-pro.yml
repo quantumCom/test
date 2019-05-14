@@ -1,6 +1,11 @@
 spring:
   application:
     name: client2
+  rabbitmq:
+    host: 172.17.132.96
+    port: 5672
+    username: admin
+    password: admin
 feign:
   hystrix:
     enabled: true
