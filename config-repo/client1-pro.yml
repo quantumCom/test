@@ -16,7 +16,7 @@ feign:
     enabled: true
 server:
   port: 8762
-value1: hello
+value1: helloNew
 management:
   security:
     enabled: false
