@@ -6,3 +6,10 @@ feign:
     enabled: true
 server:
   port: 8763
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
