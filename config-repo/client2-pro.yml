@@ -13,3 +13,4 @@ management:
     web:
       exposure:
         include: "*"
+value1: hello
