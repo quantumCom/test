@@ -1,6 +1,16 @@
 spring:
   application:
     name: client1
+  cloud:
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 15672
+    username: admin
+    password: admin
+    
 feign:
   hystrix:
     enabled: true
