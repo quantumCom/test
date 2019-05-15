@@ -1,8 +1,10 @@
 package txb.test.coud.client2.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -11,8 +13,12 @@ import txb.test.coud.client2.service.Client1Service;
 
 import java.util.List;
 
+@RefreshScope
 @RestController
 public class Client2Controller {
+
+    @Value("${value1}")
+    private String value1;
 
     @Autowired
     private DiscoveryClient discoveryClient;
@@ -23,6 +29,11 @@ public class Client2Controller {
     @RequestMapping("/service-instances/{applicationName}")
     public List<ServiceInstance> serviceInstancesByApplicationName(@PathVariable String applicationName) {
         return discoveryClient.getInstances(applicationName);
+    }
+
+    @RequestMapping("/config/value1")
+    public String configValue1() {
+        return value1;
     }
 
     @RequestMapping("/say-hello")

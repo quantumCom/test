@@ -1,6 +1,11 @@
 spring:
   application:
     name: config-server
+  rabbitmq:
+    host: 172.17.132.96
+    port: 5672
+    username: admin
+    password: admin
   cloud:
     config:
       server:
@@ -15,5 +20,12 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 server:
   port: 9898
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 

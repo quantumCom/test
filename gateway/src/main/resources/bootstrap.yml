@@ -7,6 +7,19 @@ spring:
       discovery:
         enabled: true
         serviceId: config-server
+#    gateway:
+#      routes:
+#        - id: host_foo_path_headers_to_httpbin
+#        uri: http://ityouknow.com
+#        predicates:
+#          - Host=**.foo.org
+#          - Path=/headers
+#          - Method=GET
+#          - Header=X-Request-Id, \d+
+#          - Query=foo, ba.
+#          - Query=baz
+#          - Cookie=chocolate, ch.p
+#          - After=2018-01-20T06:06:06+08:00[Asia/Shanghai]
 eureka:
   client:
     service-url:
